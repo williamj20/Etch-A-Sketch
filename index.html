@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ondragstart="return false;">
+    <header>
+        <h1>Etch A Sketch</h1>
+    </header>
+    <main>
+        <div class="settings">
+            <input type="color" id="adjust-color" value="#000000" onclick="setColor(this.value)">
+            <button type="button" class="btn" id="rainbow-btn" onclick="setColor('rainbow')">Rainbow</button>
+            <button type="button" class="btn" id="erase-btn" onclick="setColor('erase')">Erase</button>
+            <button type="button" class="btn" id="fill-btn" onclick="fillGrid()">Fill</button>
+            <button type="button" class="btn" onclick="clearGrid()">Clear</button>
+            <input type="range" min="1" max="100" value="16" id="slider" onmousemove="updateGridSizeValue(this.value)" onchange="changeGridSize(this.value)">
+            <div id="grid-size">Grid Size: 16 x 16</div>
+        </div>  
+        <div class="grid-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

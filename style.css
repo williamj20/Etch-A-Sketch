@@ -1,0 +1,75 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #efefefda;
+}
+
+header {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.settings {
+    width: 150px;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+
+} 
+
+.btn {
+    padding: 10px;
+    background-color: rgba(173, 216, 230, 0.747);
+    border: 1px solid blue;
+    font-weight: bold;
+    color: blue;
+    border-radius: 10px;
+}
+
+.btn:hover, .btn-active {
+    background-color: rgba(9, 88, 114, 0.555);
+}
+
+.grid-container {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.square {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#slider {
+    width: 150px;
+    margin-top: auto;
+}
+
+#grid-size {
+    color: blue;
+    font-weight: bold;
+    margin-top: -30px;
+    text-align: center;
+}
+
+#adjust-color {
+    padding: 0;
+    width: 75px;
+    height: 38px;
+    border: none;
+    align-self: center;
+}
